@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{FEATURE_NAME}} — What changed and why</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 760px;
+    margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 2rem;
+    border-bottom: 2px solid #eee; padding-bottom: .25rem; }
+  .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .before-after div { background: #f7f7f7; border-radius: 8px; padding: 1rem; }
+  .tag { display: inline-block; background: #eef; border-radius: 4px;
+    padding: .1rem .5rem; font-size: .85rem; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>{{FEATURE_NAME}}</h1>
+<p><span class="tag">{{DATE}}</span> <span class="tag">{{FEATURE_ID}}</span></p>
+
+<h2>Why did we build this?</h2>
+<p>{{BUSINESS_REASON — plain language, no jargon}}</p>
+
+<h2>What was the old experience?</h2>
+<p>{{BEFORE}}</p>
+
+<h2>What changed?</h2>
+<p>{{AFTER}}</p>
+
+<div class="before-after">
+  <div><strong>Before</strong><p>{{BEFORE_SHORT}}</p></div>
+  <div><strong>After</strong><p>{{AFTER_SHORT}}</p></div>
+</div>
+
+<h2>How do your customers experience it?</h2>
+<p>{{CUSTOMER_JOURNEY — step by step, as a shopper would tell it}}</p>
+
+<h2>What can you change yourself?</h2>
+<p>{{MERCHANT_CONTROLS — every setting available in the theme editor}}</p>
+
+<h2>Why did we choose this approach?</h2>
+<p>{{DECISION_SUMMARY — options considered, reason, no technical terms}}</p>
+
+<h2>Business impact</h2>
+<p>{{IMPACT}}</p>
+
+<h2>Limitations &amp; next steps</h2>
+<p>{{LIMITS_AND_ROADMAP}}</p>
+
+<footer>Prepared for {{CLIENT_NAME}}. Technical reference:
+{{SPEC_PATH}} · Questions? See the handoff guide.</footer>
+</body>
+</html>

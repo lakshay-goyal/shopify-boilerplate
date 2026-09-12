@@ -1,5 +1,12 @@
 # AGENTS.md
 
+> Agent harness: this file defines **theme architecture and Liquid
+> conventions**. The engineering operating system lives in `.agent/`
+> (start at `.agent/README.md`, obey `.agent/AGENT.md`, track state in
+> `.agent/state/progress.md`). Product truth lives in `context/`
+> (RFC → SPEC → TDD → INSIGHTS). `CLAUDE.md` and `copilot-instructions.md`
+> point here, so this page plus `.agent/` cover every provider.
+
 🚨 MANDATORY: YOU MUST CALL "learn_shopify_api" ONCE WHEN WORKING WITH LIQUID THEMES.
 
 Use the [Shopify AI Toolkit](https://shopify.dev/docs/apps/build/ai-toolkit) for all Shopify API and platform work. If missing, install it in the agent host per that page (or `npx skills add Shopify/shopify-ai-toolkit --list` for skill-compatible hosts).
