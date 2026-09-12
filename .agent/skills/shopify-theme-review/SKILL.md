@@ -18,6 +18,11 @@ worktree path or a diff.
 
 ## Procedure — check each, report file:line PASS/FAIL
 
+0. **E-commerce UI gate**: apply `.agent/rules/ecommerce-ui.md`
+   §§2–5 (tokens, states, motion, content, niche-adaptive). Any hardcoded
+   hex, off-scale spacing, raw font-size, 500px-min grid, missing
+   focus/reduced-motion, hardcoded English, or schema locking one
+   niche posture without a setting = FAIL (merge-blocking major).
 1. **Hardcoded user-facing text**: grep rendered output strings NOT via
    `| t` in `.liquid` (allow a11y-hidden technical strings only if noted).
    Every fail → must become locale key + `en.default.json` entry.

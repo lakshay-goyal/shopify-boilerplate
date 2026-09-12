@@ -5,7 +5,8 @@ Highest → lowest:
 1. System / platform constraints (Shopify TOS, secrets law, safety)
 2. Repository safety (`.agent/rules/safety.md`)
 3. Project conventions (root `AGENTS.md`, `.agent/rules/coding.md`,
-   `.agent/rules/shopify.md`, `.agent/rules/git.md`)
+   `.agent/rules/shopify.md`, `.agent/rules/ecommerce-ui.md`,
+   `.agent/rules/git.md`)
 4. Accepted RFC
 5. SPEC (+ acceptance criteria)
 6. TDD / acceptance criteria detail

@@ -2,11 +2,16 @@
 
 ## Current objective
 
-Harness bootstrap: `.agent/` + `context/` created, awaiting first client RFC.
+Harness + quality bar encoded: `.agent/` carries hard e-commerce/UI
+constraints, `context/` carries niche-adaptive guidance (owner's two
+screenshot teardowns are illustrative examples only, not build targets).
+Awaiting first real client RFC. No product code changed, ever.
 
 ## Current feature / task
 
-None active — harness setup in progress.
+None active — awaiting first client RFC. (A premature FEAT-001 with
+RFC/SPEC/TDD was drafted from the illustrative examples and has been
+fully removed per owner order.)
 
 ## Status
 
@@ -18,10 +23,22 @@ in-progress
   10 skills, 5 role cards, 7 templates, verification docs, 2 scripts, 3 docs
 - `context/` skeleton: all 14 sections with READMEs + starter files
 - AGENTS.md adapter header (CLAUDE.md / copilot-instructions.md inherit via symlink)
+- 5-agent unbiased audit (2026-09-12): e-commerce 0/16, pixel, content,
+  niche, traceability verdicts distilled into durable guidance (chat
+  history; evidence: file:line cites). No task artifacts kept.
+- `.agent/rules/ecommerce-ui.md` hard constraints (16-point gate, tokens,
+  states, motion, content, niche-adaptive rule) + wired into priority.md
+- Hardened skills: ecommerce-check (gate + niche fit), shopify-theme-review
+  (UI gate step 0), review-execution (unbiased stance)
+- `context/` guidance only: DECISIONS/001 niche-adaptive principle,
+  RESEARCH/references/ecommerce-benchmarks (two screenshot teardowns
+  marked illustrative, not targets). FEATURES empty; no RFC/SPEC/TDD pending.
+- Premature FEAT-001 artifacts removed; accidental code edits reverted;
+  master pristine
 
 ## In progress
 
-- None — harness bootstrap complete, awaiting first client RFC.
+- None — harness + quality bar complete, awaiting first client RFC.
 
 ## Blocked
 
@@ -54,6 +71,13 @@ in-progress
 
 - Worktrees live outside repo as `../<repo>-<id>-<slug>`, branches `feat/<id>-<slug>`.
 - TDD = Given/When/Then checklists verified via preview + theme-check (no unit runner).
+- Codebase frozen until first RFC is accepted; only
+  `.agent/` + `context/` carry guidance. Niche examples are illustrative;
+  the RFC defines the real niche. One adaptive section + presets over
+  niche-locked variants; sections expose posture settings where it matters.
+- Benchmarks: two screenshot teardowns
+  (`context/RESEARCH/references/ecommerce-benchmarks.md`) set the visual
+  bar only — never requirements.
 
 ## Open questions
 
@@ -66,12 +90,15 @@ in-progress
 
 ## Remaining work
 
-1. First real client RFC → proves pipeline end to end.
+1. First real client RFC → proves pipeline end to end
+   (`rfc-generator` → `spec-generator` → `tdd-generator` →
+   `ecommerce-check` before any code).
 
 ## Next recommended action
 
-Run `rfc-generator` on the first client brief (`context/RFC/001-<slug>.md`),
-then `spec-generator` → `tdd-generator` → `ecommerce-check` before any code.
+Run `rfc-generator` on the first client brief (`context/RFC/001-<slug>.md`).
+The RFC names the real niche; agents adapt the quality bar to it. Until
+then: no product-code changes.
 
 ---
-Last updated: 2026-09-12 · Updated by: harness bootstrap
+Last updated: 2026-09-12 · Updated by: guidance-only pass (no code touched, no task artifacts)

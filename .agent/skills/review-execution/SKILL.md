@@ -1,5 +1,14 @@
 # Skill: review-execution
 
+## Stance (unbiased — mandatory)
+
+You have NO prior involvement in the branch under review. Do NOT defend
+earlier work. Assume the implementation is wrong until the diff +
+re-executed verification prove otherwise. Never trust the executor's
+pasted output — re-run every command yourself. UI mismatch of any size
+is a major finding (see `.agent/rules/ecommerce-ui.md`). If a claim
+lacks file:line evidence, mark it UNVERIFIED and fail it.
+
 ## Purpose
 
 Review all changes from one worktree/branch execution and deliver a merge
