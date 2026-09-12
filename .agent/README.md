@@ -24,12 +24,20 @@ Kimi, Gemini, Cursor, future agents) working on this Shopify Liquid theme.
    - A skill? → `.agent/skills/<name>/SKILL.md` (load one at a time)
    - A rule conflict? → `.agent/rules/priority.md`
 
-## Lifecycle
+## Lifecycle (three phases — never mix them)
 
 ```
-Research → RFC → SPEC → TDD → worktree → implement → verify → review
-  → merge → final validation → INSIGHT (insight.html) → progress update → next
+Phase 1 brainstorm      → company in, brainstorm.md + Q&A.md out (no RFC/SPEC/code)
+Phase 2 initialization  → Q&A answers in, RFC + SPECs + TDD lists + Excalidraw + insight out (no code)
+Phase 3 implement       → confirmed plan in, parallel worktrees → verify → review → merge → unbiased audit → insight
 ```
+
+Skill chain: `brainstorming` → `rfc-generator` → `spec-generator` →
+`tdd-generator` → `diagram-generator` → `ecommerce-check` →
+`worktree-executor` → `review-execution` → `shopify-theme-review` →
+`commit-message` → `test-review`. Workflows: `brainstorm.md`,
+`initialization.md`, `implement.md` (+ `parallel-work.md`,
+`review.md`, `verification.md`, `feature.md` as the per-feature path).
 
 Never trust unverified agent output. Executable verification decides
 whether implementation works, not the agent's claim.
@@ -38,7 +46,8 @@ whether implementation works, not the agent's claim.
 
 | Skill | When |
 |---|---|
-| `rfc-generator` | New client brief → `context/RFC/` |
+| `brainstorming` | Phase 1: company brief → `context/BRAINSTORM/` (`brainstorm.md` + `Q&A.md`) |
+| `rfc-generator` | Phase 2: brainstorm + Q&A answers → `context/RFC/` |
 | `diagram-generator` | Decisions/flows → `context/EXCALIDRAW/` |
 | `spec-generator` | Accepted RFC/PRD → `context/SPEC/` + `FEATURES/` |
 | `tdd-generator` | Spec → `context/TDD/` test cases (before code) |

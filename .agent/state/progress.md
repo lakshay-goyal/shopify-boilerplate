@@ -35,10 +35,15 @@ in-progress
   marked illustrative, not targets). FEATURES empty; no RFC/SPEC/TDD pending.
 - Premature FEAT-001 artifacts removed; accidental code edits reverted;
   master pristine
+- Three-phase operating model: `brainstorming` skill + `brainstorm` /
+  `initialization` / `implement` workflows, `brainstorm.md` + `qa.md`
+  templates, `context/BRAINSTORM/` structure (idea folders with
+  `brainstorm.md` + `Q&A.md`); niche examples marked illustrative only
 
 ## In progress
 
-- None — harness + quality bar complete, awaiting first client RFC.
+- None — harness + quality bar + phased workflows complete, awaiting
+  first company brief via `/brainstorming` (Phase 1).
 
 ## Blocked
 
@@ -90,15 +95,15 @@ in-progress
 
 ## Remaining work
 
-1. First real client RFC → proves pipeline end to end
-   (`rfc-generator` → `spec-generator` → `tdd-generator` →
-   `ecommerce-check` before any code).
+1. First company brief → Phase 1 `/brainstorming`
+   (`context/BRAINSTORM/001-<slug>/` with `brainstorm.md` + `Q&A.md`).
 
 ## Next recommended action
 
-Run `rfc-generator` on the first client brief (`context/RFC/001-<slug>.md`).
-The RFC names the real niche; agents adapt the quality bar to it. Until
+Run `/brainstorming` with the company details (niche, products,
+audience, brand assets, goals). Answer the Q&A file, then Phase 2
+`initialization`, confirm the pack, then Phase 3 `implement`. Until
 then: no product-code changes.
 
 ---
-Last updated: 2026-09-12 · Updated by: guidance-only pass (no code touched, no task artifacts)
+Last updated: 2026-09-12 · Updated by: three-workflow pass (no code touched, no task artifacts)

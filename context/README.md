@@ -7,6 +7,9 @@ about intent.
 
 ## Map
 
+- `BRAINSTORM/` — Phase 1 ideas: per-idea `brainstorm.md` (company,
+  competitors, customers, theme direction) + `Q&A.md` (questions the
+  human must answer). Thinking, not requirements.
 - `RFC/` — proposed changes. Answers: *should we build this?*
 - `SPEC/` — exact build instructions. Answers: *what exactly, and how will
   we know it's done?*
@@ -27,7 +30,9 @@ about intent.
 
 Every feature owns a Context ID (`FEAT-001`). Its RFC, SPECs, TDDs,
 decisions, diagrams, and insight all reference it, so one feature's full
-lifecycle is traceable. Pipeline: `RFC → SPEC → TDD → code → INSIGHTS`.
+lifecycle is traceable. Pipeline:
+`BRAINSTORM → RFC → SPEC → TDD → code → INSIGHTS` (phases: brainstorm →
+initialization → implement; see `.agent/workflows/`).
 
 ## Rules for agents
 

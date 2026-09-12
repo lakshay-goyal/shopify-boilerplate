@@ -1,6 +1,8 @@
-# Workflow: feature (RFC → SPEC → TDD → worktree → review → insight)
+# Workflow: feature (per-feature path inside the three phases)
 
-The default path for every substantial feature (FEAT-NNN).
+Phases: `brainstorm.md` (Phase 1) → `initialization.md` (Phase 2) →
+`implement.md` (Phase 3). This file is the per-feature execution path
+used inside Phase 3 once the plan is confirmed.
 
 ```
 1. RFC        skill: rfc-generator        → context/RFC/NNN-slug.md (proposed)
